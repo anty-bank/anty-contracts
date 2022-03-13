@@ -123,16 +123,6 @@ contract AntbIDO is Ownable {
         return true;
     }
 
-    /// @dev Remove this function before publishing the final version
-    function enableInitialize() external onlyOwner {
-        initialized = true;
-    }
-
-    /// @dev Remove this function before publishing the final version
-    function disableInitialize() external onlyOwner {
-        initialized = false;
-    }
-
     function enableWhiteList() external onlyOwner {
         whiteListEnabled = true;
     }
